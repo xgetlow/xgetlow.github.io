@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="js,移动Web,">
 
 
 
@@ -79,15 +79,18 @@
 
 
 
-<meta name="keywords" content="HTML5,CSS3,Vuejs,Nodejs,Ajax">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="rem适配方法 1.先设置header里面的meta标签1&amp;lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1, minimum-scale=1&quot;&amp;gt;2.在header写上script标签编写以下函数123456(function()&amp;#123;	var styleNode = document.createElem">
+<meta name="keywords" content="js,移动Web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动设备的适配为题(原生js)">
+<meta property="og:url" content="http://yoursite.com/移动设备的适配为题-原生js.html">
 <meta property="og:site_name" content="xGetlow">
+<meta property="og:description" content="rem适配方法 1.先设置header里面的meta标签1&amp;lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1, minimum-scale=1&quot;&amp;gt;2.在header写上script标签编写以下函数123456(function()&amp;#123;	var styleNode = document.createElem">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-13T18:52:29.550Z">
+<meta property="og:updated_time" content="2018-12-13T21:41:26.238Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="移动设备的适配为题(原生js)">
+<meta name="twitter:description" content="rem适配方法 1.先设置header里面的meta标签1&amp;lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1, minimum-scale=1&quot;&amp;gt;2.在header写上script标签编写以下函数123456(function()&amp;#123;	var styleNode = document.createElem">
 
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/移动设备的适配为题-原生js.html">
 
 
 
 
 
-  <title>tags | xGetlow</title>
+  <title>移动设备的适配为题(原生js) | xGetlow</title>
   
 
 
@@ -278,40 +281,149 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/移动设备的适配为题-原生js.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xGetlow">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xGetlow">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 4 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/css3特效/" style="font-size: 30px; color: #111">css3特效</a> <a href="/tags/js/" style="font-size: 12px; color: #ccc">js</a> <a href="/tags/加载效果/" style="font-size: 30px; color: #111">加载效果</a> <a href="/tags/移动Web/" style="font-size: 12px; color: #ccc">移动Web</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">移动设备的适配为题(原生js)</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-14T05:11:48+08:00">
+                2018-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p></p><h1>rem适配方法</h1><p></p>
+<p>1.先设置header里面的meta标签</p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"initial-scale=1,maximum-scale=1, minimum-scale=1"</span>&gt;</span><br></pre></td></tr></table></figure><br><br><p>2.在header写上script标签编写以下函数</p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">	var styleNode = document.createElement(<span class="string">'style'</span>);</span><br><span class="line">	var w = document.documentElement.clientWidth/16;</span><br><span class="line">	styleNode.innerHTML = <span class="string">"html&#123;font-size:"</span>+w+<span class="string">"px!important&#125;"</span>;</span><br><span class="line">	document.head.appendChild(styleNode);</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure><br><br><p>缺点:1:对IE的兼容性不是很友好 2:局限性rem,转换px思考比较麻烦</p><br><p>优点:稳定,90%以上的移动设备显示一致</p>
+
+<p></p><h1>固定适配方法</h1><p></p>
+<p>1.在header写上script标签编写以下函数</p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">	var targetW = 640;</span><br><span class="line">	var scale = document.documentElement.clientWidth/targetW;</span><br><span class="line">	var meta = document.querySelector(<span class="string">"meta[name='viewport']"</span>);</span><br><span class="line">	meta.content = <span class="string">"initial-scale="</span> +scale+ <span class="string">",maximum-scale="</span> +scale+ <span class="string">",maximum-scale="</span> +scale+ <span class="string">",user-scalable=no"</span></span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure><br><br><p>缺点:目前没有发现</p><br><p>优点:兼容性比较稳,百分比</p>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/移动Web/" rel="tag"># 移动Web</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/页面加载特效-PartThree.html" rel="next" title="页面加载特效 PartThree">
+                <i class="fa fa-chevron-left"></i> 页面加载特效 PartThree
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -344,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -405,6 +526,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">rem适配方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">固定适配方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
